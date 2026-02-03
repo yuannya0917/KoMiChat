@@ -1,8 +1,8 @@
 import type { ChatCompletionMessage } from '../model/chatTypes'
 
 const AI_PROXY_URL =
-  import.meta.env.VITE_QWEN_PROXY_URL || 'https://qwen-proxy.yspeaking.workers.dev'
-const DEFAULT_QWEN_MODEL = import.meta.env.VITE_QWEN_MODEL || 'qwen-vl-plus'
+  import.meta.env.VITE_QWEN_PROXY_URL
+const DEFAULT_QWEN_MODEL = import.meta.env.VITE_QWEN_MODEL
 const DEFAULT_TIMEOUT_MS = 20_000
 const DEFAULT_RETRY = 1
 const DEFAULT_RETRY_DELAY_MS = 600
