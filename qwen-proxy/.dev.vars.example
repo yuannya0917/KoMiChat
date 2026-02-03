@@ -1,0 +1,2 @@
+# Cloudflare Worker local dev variables (do not commit .dev.vars)
+QWEN_API_KEY=your_qwen_api_key_here
