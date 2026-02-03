@@ -43,6 +43,7 @@ export default {
 		} catch {
 			return new Response('Bad Request', { status: 400, headers: CORS_HEADERS })
 		}
+		const isStream = Boolean(body?.stream)
 
 		const upstream = await fetch('https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions', {
 			method: 'POST',
@@ -64,6 +65,13 @@ export default {
 		headers.set('Access-Control-Allow-Headers', CORS_HEADERS['Access-Control-Allow-Headers'])
 		headers.set('Access-Control-Allow-Methods', CORS_HEADERS['Access-Control-Allow-Methods'])
 		headers.set('Access-Control-Expose-Headers', CORS_HEADERS['Access-Control-Expose-Headers'])
+		if (isStream) {
+			// 强制 SSE 关键 header，避免代理/中间层缓冲导致“看起来不流式”
+			headers.set('Content-Type', 'text/event-stream; charset=utf-8')
+			headers.set('Cache-Control', 'no-cache, no-transform')
+			headers.set('Connection', 'keep-alive')
+			headers.set('X-Accel-Buffering', 'no')
+		}
 
 		return new Response(upstream.body, {
 			status: upstream.status,
