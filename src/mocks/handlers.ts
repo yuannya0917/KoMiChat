@@ -32,7 +32,7 @@ const buildSampleMessages = (conversationId: string, count: number): ChatMessage
  * 缓存名称：用于在浏览器 Cache Storage 中持久化 mock 的对话/消息数据。
  * - 版本号变更可以用于“自然清空”旧缓存。
  */
-const CACHE_NAME = 'yspeaking-mock-chat-cache-v2'
+const CACHE_NAME = 'komichat-mock-chat-cache-v2'
 
 /**
  * 缓存 key：用一个固定的 Request 作为 cache 的索引。

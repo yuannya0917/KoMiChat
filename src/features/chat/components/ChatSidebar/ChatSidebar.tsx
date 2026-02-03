@@ -25,7 +25,7 @@ export const ChatSidebar: React.FC<ChatSidebarProps> = ({
     return (
         <aside className={styles.sidebar}>
             <div className={styles.sidebarHeader}>
-                <div className={styles.brand}>YSpeaking</div>
+                <div className={styles.brand}>KoMiChat</div>
                 <Button
                     type="primary"
                     icon={<PlusOutlined />}

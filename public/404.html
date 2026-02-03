@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      const base = '/YSpeaking';
+      const base = '/komichat';
       const path = location.pathname.replace(base, '');
       const target = `${base}/?path=${encodeURIComponent(path)}${location.search}${location.hash}`;
       location.replace(target);
