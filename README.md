@@ -1,6 +1,6 @@
 # KoMiChat
 
-一个基于Qwen大模型的AI对话前端项目，尽可能贴近实际AI聊天产品，基本实现多对话列表、SSE流式输出、简单的SST和TTS已经智能滚动等AI对话产品的灵魂
+一个基于Qwen大模型的AI对话前端项目，尽可能贴近实际AI聊天产品，基本实现多对话列表、SSE流式输出、简单的SST和TTS以及智能滚动等AI对话产品的灵魂
 
 ## 预览
 
@@ -71,14 +71,17 @@ KoMiChat/
 *DFD0*
 
 ![DFD0](docs/assets/DFD0.png)
+*DFD0*
 
 *对话DFD*
 
 ![对话DFD](docs/assets/对话数据流图.png)
+*对话DFD*
 
 *SSE解析DFD*
 
 ![SSE解析DFD](docs/assets/SSE数据流图.png)
+*SSE解析DFD*
 
 
 
