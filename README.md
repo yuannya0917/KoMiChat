@@ -68,11 +68,19 @@ KoMiChat/
 
 ## Architecture（架构与数据流）
 
+*DFD0*
+
 ![DFD0](docs/assets/DFD0.png)
+
+*对话DFD*
 
 ![对话DFD](docs/assets/对话数据流图.png)
 
+*SSE解析DFD*
+
 ![SSE解析DFD](docs/assets/SSE数据流图.png)
+
+
 
 ## 关键实现
 
