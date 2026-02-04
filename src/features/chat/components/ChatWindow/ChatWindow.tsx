@@ -52,12 +52,13 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({
     const lazyInitializedRef = useRef(false)
     const [isOnline, setIsOnline] = useState(() => navigator.onLine)
 
-    const LAZY_THRESHOLD = 60
-    const INITIAL_RENDER_COUNT = 40
-    const LOAD_MORE_STEP = 20
-    const NEAR_BOTTOM_PX = 120
-    const JUMP_BOTTOM_OFFSET_PX = 40
-    const LOAD_MORE_TRIGGER_PX = 80
+    
+    const LAZY_THRESHOLD = 60               // 超过多少条消息才采用懒加载
+    const INITIAL_RENDER_COUNT = 40         // 首次渲染时加载的消息数
+    const LOAD_MORE_STEP = 20               // 每次向上查看更多时，追加加载的消息数
+    const NEAR_BOTTOM_PX = 120              // 距离底部多少像素以内算“快到最底部了”，触发自动滚动
+    const JUMP_BOTTOM_OFFSET_PX = 40        // “跳到底部”按钮底部偏移量，防止被底部输入区挡住
+    const LOAD_MORE_TRIGGER_PX = 80         // 当滚动到顶部多少像素内，触发向上加载更多消息
 
     useEffect(() => {
         const el = composerDockRef.current

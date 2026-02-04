@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yuannya0917.github.io/komichat",
+  "homepage": "https://yuannya0917.github.io/KoMiChat",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

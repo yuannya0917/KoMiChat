@@ -4,7 +4,7 @@ import vitePluginImp from 'vite-plugin-imp'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/komichat/',
+  base: '/KoMiChat/',
   plugins: [
     react(),
     vitePluginImp({

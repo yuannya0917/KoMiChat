@@ -54,7 +54,7 @@ const defaultStore: {
             {
                 id: 'msg-1',
                 conversationId: 'conv-1',
-                text: '你好，我是你的语音助手，有什么可以帮你的吗？',
+                text: '项目仓库：https://github.com/yuannya0917/KoMiChat',
                 role: 'assistant',
                 createdAt: nowIso(),
             },
