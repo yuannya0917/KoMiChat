@@ -35,8 +35,6 @@ Markdown渲染与高亮：marked+highlight.js
 
 XSS防护：DOMPurify
 
-流式请求：Fetch+ReadableStream解析SSE
-
 Mock：MSW
 
 ## Quick Start
